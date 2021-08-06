@@ -1,0 +1,90 @@
+body {
+    font-family: 'Bree', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section {
+    width: 100%;
+    background: #fff;
+    padding: 100px 0;
+}
+
+.profile-card {
+    font-family: 'Bree', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    height: 550px;
+    border: none;
+}
+
+.profile-card img {
+    width: 60%;
+}
+
+.profile-card .card-content {
+    width: 100%;
+    float: left;
+    background: #DEDCD5;
+    height: 50%;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    z-index: 9999;
+}
+
+.profile-card .card-content::before {
+    content: '';
+    background: #DEDCD5;
+    width: 120%;
+    height: 100%;
+    left: 11px;
+    bottom: 51px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-13deg);
+}
+
+.profile-card h2 {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile-card h2 span:first-child {
+    color: #385723;
+}
+
+.profile-card h2 span {
+    font-size: 50px;
+    font-family: 'Bree', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.profile-card h2 span:nth-child(2n) {
+    color: #385723;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.profile-card p {
+    text-align: center;
+    margin: 10% 0 15% 0;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
+.profile-card address {
+    color: #b90e3f;
+}
+
+.profile-card ul {
+    color: #b90e3f;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    margin: 0 50px 0 0;
+}

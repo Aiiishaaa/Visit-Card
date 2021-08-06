@@ -1,0 +1,59 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+body {
+    font-family: 'Bree', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.card-body h2 {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 4%;
+}
+
+.card-body h2 span:first-child {
+    color: #385723;
+}
+
+.card-body h2 span {
+    font-size: 50px;
+    font-family: 'Bree', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.card-body h2 span:nth-child(2n) {
+    color: #385723;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.card-text {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.card-footer {
+    color: #b90e3f;
+    background-color: #DEDCD5;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+address {
+    color: #b90e3f;
+    text-align: center;
+}
+
+.phone {
+    margin: 0 50px 0 0;
+}
+
+.email {
+    float: right;
+}
