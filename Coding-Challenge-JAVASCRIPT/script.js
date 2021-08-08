@@ -39,7 +39,6 @@ let data = [{
 
 function populateTable() {
     var table = "";
-
     for (var i in data) {
         table += "<tr>";
         table += "<td>" +
@@ -52,7 +51,19 @@ function populateTable() {
 
     document.getElementById("result").innerHTML = table;
 
+    var totals = 0
+    for (var i in data) {
+        totals += data[i].total
+    }
+    totals = Math.round(totals * 100) / 100
+    document.getElementById("totals").innerHTML = totals;
 }
-$(document).ready(function(e) {
-
+$(document).ready(function() {
+    $("#search").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".table_body tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            document.getElementById("totals").innerHTML = "";
+        });
+    });
 });
